@@ -36,8 +36,21 @@ public class OpenGLTestActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        mGLSurfaceView = new GLSurfaceView(this);
+        
+        boolean surfaceViewIsLayout = true; 
+
+        if(surfaceViewIsLayout)
+        {
+            setContentView(R.layout.gl_test_layout);
+            mGLSurfaceView = (GLSurfaceView) findViewById(R.id.glSurfaceView);
+        }
+        else
+        {
+        	setContentView(R.layout.main);
+        	mGLSurfaceView = new GLSurfaceView(this);
+        }
+        
+        
         SimpleGLRenderer spriteRenderer = new SimpleGLRenderer(this);
        
         // Clear out any old profile results.
@@ -138,6 +151,8 @@ public class OpenGLTestActivity extends Activity {
             simulationRuntime.setViewSize(dm.widthPixels, dm.heightPixels);
             mGLSurfaceView.setEvent(simulationRuntime);
         }
-        setContentView(mGLSurfaceView);
+        
+        if(!surfaceViewIsLayout)
+        	setContentView(mGLSurfaceView);
     }
 }

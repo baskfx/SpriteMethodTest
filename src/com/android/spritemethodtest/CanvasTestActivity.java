@@ -89,8 +89,8 @@ public class CanvasTestActivity extends Activity {
         // Note that 512x512 is larger than the screen, so some clipping will
         // occur when this image is drawn.
         CanvasSprite background = new CanvasSprite(mBitmaps[0]);
-        background.width = 512;
-        background.height = 512;
+        background.width = dm.widthPixels;
+        background.height = dm.heightPixels;
         spriteArray[0] = background;
         
         // This list of things to move. It points to the same content as

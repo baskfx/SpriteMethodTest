@@ -18,24 +18,29 @@ public final class R {
         public static final int skate3=0x7f020004;
     }
     public static final class id {
-        public static final int GLSettings=0x7f050009;
-        public static final int animateSprites=0x7f050005;
-        public static final int canvasSurfaceView=0x7f050000;
-        public static final int methodCanvas=0x7f050007;
-        public static final int methodOpenGL=0x7f050008;
-        public static final int renderMethod=0x7f050006;
-        public static final int runTest=0x7f05000d;
-        public static final int settingDrawTexture=0x7f05000b;
-        public static final int settingVBO=0x7f05000c;
-        public static final int settingVerts=0x7f05000a;
-        public static final int spriteCount=0x7f050004;
-        public static final int widget38=0x7f050003;
-        public static final int widget39=0x7f050001;
-        public static final int widget40=0x7f050002;
+        public static final int GLSettings=0x7f05000d;
+        public static final int animateSprites=0x7f050009;
+        public static final int button1=0x7f050001;
+        public static final int button2=0x7f050003;
+        public static final int canvasSurfaceView=0x7f050002;
+        public static final int editText1=0x7f050000;
+        public static final int glSurfaceView=0x7f050004;
+        public static final int methodCanvas=0x7f05000b;
+        public static final int methodOpenGL=0x7f05000c;
+        public static final int renderMethod=0x7f05000a;
+        public static final int runTest=0x7f050011;
+        public static final int settingDrawTexture=0x7f05000f;
+        public static final int settingVBO=0x7f050010;
+        public static final int settingVerts=0x7f05000e;
+        public static final int spriteCount=0x7f050008;
+        public static final int widget38=0x7f050007;
+        public static final int widget39=0x7f050005;
+        public static final int widget40=0x7f050006;
     }
     public static final class layout {
         public static final int canvas_test_layout=0x7f030000;
-        public static final int main=0x7f030001;
+        public static final int gl_test_layout=0x7f030001;
+        public static final int main=0x7f030002;
     }
     public static final class string {
         public static final int AnimateTitle=0x7f040004;
